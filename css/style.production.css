@@ -201,7 +201,7 @@ li {
 }
 
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 1440px) {
 
   /* shared code */
   .grid {
@@ -221,27 +221,10 @@ li {
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 750px) and (max-width: 1250px) {
   .grid {
     -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
-  }
-
-  h2 {
-    font-size: 1.17em;
-  }
-
-  p,
-  a {
-    font-size: .83em;
-
-  }
-}
-
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
   }
 
   h1 {
@@ -253,8 +236,74 @@ li {
   }
 
   p,
-  a {
+  a,
+  body {
+    font-size: .83em;
+
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: .9em;
+  }
+
+  p,
+  a,
+  body {
+    font-size: .8em;
+
+  }
+
+  #profile-picture {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    float: none;
+    margin: 0.5em 0 0 0;
+    text-align: center;
+
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: .9em;
+  }
+
+  p,
+  a,
+  body,
+  footer {
     font-size: .67em;
+
+  }
+
+  #profile-picture {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    float: none;
+    margin: 0.5em 0 0 0;
+    text-align: center;
 
   }
 }
