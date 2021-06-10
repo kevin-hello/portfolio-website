@@ -393,6 +393,11 @@ button:focus,
   animation: 6s color-change5 infinite alternate ease-in-out;
 }
 
+.animation {
+  display: inline-block;
+  margin: 0.5em 0.25em;
+}
+
 .highlight:hover,
 .hightlight:focus {
   text-shadow: 0 0 25px var(--hover-color);

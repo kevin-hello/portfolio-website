@@ -5,23 +5,12 @@
 * Browsers: last 4 version
 */
 
-:root {
-  --primary-color: #eee2be;
-  --header-color: #0a9396;
-  --grid-color: #94d2bd;
-  --font-color: #000;
-  --link-color: #03045e;
-  --hover-color: #13042b;
-  --button-color: #ee9b00;
-  --button-border-color: #bb3e03;
-}
-
 * {
   font-family: 'Noto Sans JP', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
-  color: var(--font-color);
+  color: #000;
 
 }
 
@@ -29,7 +18,7 @@
 body {
   font-size: 1em;
   line-height: normal;
-  background-color: var(--primary-color);
+  background-color: #eee2be;
   -webkit-box-align: r;
   -ms-flex-align: r;
   align-items: r
@@ -38,7 +27,7 @@ body {
 footer {
   font-size: .85em;
   line-height: normal;
-  background-color: var(--primary-color);
+  background-color: #eee2be;
 }
 
 
@@ -52,7 +41,7 @@ footer {
 
 a:visited {
   /* visited link */
-  color: var(--link-color);
+  color: #03045e;
   text-shadow: white 0px 0px 10px;
 }
 
@@ -64,17 +53,17 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: var(--font-color);
+  color: #000;
 }
 
 button {
   /* overwrites browser defaults and resets the border */
-  border: 2px solid var(--button-border-color);
+  border: 2px solid #bb3e03;
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--button-color);
-  color: var(--font-color);
+  background-color: #ee9b00;
+  color: #000;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -90,7 +79,7 @@ button {
   display: flex;
   width: 100%;
   padding: 20px;
-  background-color: var(--header-color);
+  background-color: #0a9396;
 }
 
 .page-header__item {
@@ -123,10 +112,10 @@ button {
   -ms-flex-line-pack: start;
   align-content: flex-start;
   border-radius: 25px;
-  background-color: var(--grid-color);
-  -webkit-box-shadow: inset 0 0.6em 2em -0.3em var(--header-color);
-  box-shadow: inset 0 0.6em 2em -0.3em var(--header-color);
-  border-bottom: 0.15em solid var(--header-color);
+  background-color: #94d2bd;
+  -webkit-box-shadow: inset 0 0.6em 2em -0.3em #0a9396;
+  box-shadow: inset 0 0.6em 2em -0.3em #0a9396;
+  border-bottom: 0.15em solid #0a9396;
 
 }
 
@@ -154,10 +143,10 @@ button {
     border-radius: 25px;
     -ms-flex-line-pack: start;
     align-content: flex-start;
-    background-color: var(--grid-color);
-    -webkit-box-shadow: inset 0 0.6em 2em -0.3em var(--header-color);
-    box-shadow: inset 0 0.6em 2em -0.3em var(--header-color);
-    border-bottom: 0.15em solid var(--header-color);
+    background-color: #94d2bd;
+    -webkit-box-shadow: inset 0 0.6em 2em -0.3em #0a9396;
+    box-shadow: inset 0 0.6em 2em -0.3em #0a9396;
+    border-bottom: 0.15em solid #0a9396;
 
   }
 }
@@ -273,7 +262,26 @@ li {
   }
 }
 
-.button,
+.button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: #ee9b00;
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid #bb3e03;
+  -webkit-transition: 0.5s opacity;
+  -o-transition: 0.5s opacity;
+  transition: 0.5s opacity;
+}
+
 button {
   /* overwrites browser defaults */
   /* resets the border */
@@ -282,13 +290,13 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* style button */
-  background-color: var(--button-color);
-  color: var(--font-color);
+  background-color: #ee9b00;
+  color: #000;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   /* width of the border, type, color */
-  border-bottom: 2px solid var(--button-border-color);
+  border-bottom: 2px solid #bb3e03;
   -webkit-transition: 0.5s opacity;
   -o-transition: 0.5s opacity;
   transition: 0.5s opacity;
@@ -527,8 +535,17 @@ button:focus,
   animation: 6s color-change5 infinite alternate ease-in-out;
 }
 
-.highlight:hover,
+.animation {
+  display: inline-block;
+  margin: 0.5em 0.25em;
+}
+
+.highlight:hover {
+  text-shadow: 0 0 25px #13042b;
+  color: white;
+}
+
 .hightlight:focus {
-  text-shadow: 0 0 25px var(--hover-color);
+  text-shadow: 0 0 25px #13042b;
   color: white;
 }
