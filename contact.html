@@ -18,37 +18,46 @@
             src="images/logo.png">
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
-                <li role="presentation"><a href="index.html" role="menuitem" class="navigation-list__item">Home</a></li>
-                <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item"
+                <li role="presentation"><a href="index.html" role="menuitem"
+                        class="navigation-list__item highlight">Home</a></li>
+                <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item highlight"
                         aria-label="information-about-me">About</a></li>
-                <li role="presentation"><a href="work.html" role="menuitem" class="navigation-list__item">Work</a></li>
+                <li role="presentation"><a href="work.html" role="menuitem"
+                        class="navigation-list__item highlight">Work</a></li>
                 <li role="presentation"><a href="contact.html" role="menuitem"
-                        class="navigation-list__item navigation-list__item--active">Contact</a></li>
+                        class="navigation-list__item navigation-list__item--active highlight">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1 class="contact">Contact</h1>
-        <form action="" method="post" id="contact-form" name="contact-form"><label for="contact-email"
-                class="standard-label">E-mail:</label> <input required="" type="email" id="contact-email">
-            <label for="contact-telephone" class="standard-label">Telephone:</label> <input required="" type="tel"
-                id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br>
-            <br>
-            <label for="contact-message" class="standard-label">Message:</label>
-            <textarea required="" name="message" id="contact-message" cols="50" rows="4" maxlength="240"></textarea>
-            <br><button id="form-button" type="submit" form="contact-form" value="Submit">Send Message</button>
+        <form action="" method="post" id="contact-form" name="contact-form">
+            <div>
+                <label for="name" class="standard-label">Name:</label> <input required="" type="text" id="contact-name">
+            </div>
+
+            <div><label for="contact-name" class="standard-label">E-mail:</label> <input required="" type="email"
+                    id="contact-email"></div>
+            <div><label for="contact-telephone" class="standard-label">Telephone:</label> <input required="" type="tel"
+                    id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"></div>
+            <div>
+                <label for="contact-message" class="message-label">Message:</label>
+                <textarea required="" name="message" id="contact-message" cols="25" rows="5" maxlength="240"
+                    class="message-text"></textarea>
+            </div>
+            <div><button id="form-button" type="submit" form="contact-form" value="Submit">Send Message</button></div>
         </form>
-        <br>
-        <div class="contact">Company name<br>
+        <!-- <div class="contact">Company name<br>
             Street Address<br>
             City State Zip<br>
-            <br>
-            Tel <a href="tel:+18081234567" aria-label="telephone-number">+1
+            <br> </div>-->
+        <div class="contact-link">
+            Tel: <a href="tel:+18081234567" aria-label="telephone-number">+1
                 (808) 123-4567</a><br>
-            Skype <a href="skype:helloplaceholder">helloplaceholder</a><br>
-            <a href="mailto:placeholderEmail@gmail.com">placeholderemail@gmail.com</a><br>
+            Skype: <a href="skype:helloplaceholder">helloplaceholder</a><br>
+            <a href="mailto:kevinss.hello@gmail.com">kevinss.hello@gmail.com</a><br>
 
-            <a href="mailto:placeholderEmail@gmail.com">Contact me</a>
+            <a href="mailto:kevinss.hello@gmail.com">Contact me</a>
         </div>
     </main>
     <script src="js/tota11y.min.js">
