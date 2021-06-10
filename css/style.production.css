@@ -19,9 +19,6 @@ body {
   font-size: 1em;
   line-height: normal;
   background-color: #eee2be;
-  -webkit-box-align: r;
-  -ms-flex-align: r;
-  align-items: r
 }
 
 footer {
