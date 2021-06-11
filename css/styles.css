@@ -220,11 +220,12 @@ li {
   }
 
   p,
-  a,
-  body {
+  a
+ {
     font-size: .83em;
 
   }
+
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -239,13 +240,17 @@ li {
   h2 {
     font-size: .9em;
   }
-
+  header{
+    font-size: .9em;
+  }
   p,
   a,
   body {
     font-size: .8em;
-
   }
+  .page-header__item {
+    flex: 0 1 100px;
+}
 
   #profile-picture {
     border-radius: 50%;
@@ -273,11 +278,14 @@ li {
 
   p,
   a,
-  body,
+  body
   footer {
-    font-size: .67em;
+    font-size: .8em;
 
   }
+  .page-header__item {
+    flex: 0 1 100px;
+}
 
   #profile-picture {
     border-radius: 50%;

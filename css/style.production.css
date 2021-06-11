@@ -8,7 +8,7 @@
 * {
   font-family: 'Noto Sans JP', sans-serif;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
   color: #000;
 
@@ -81,14 +81,14 @@ button {
 
 .page-header__item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
 }
 
@@ -107,11 +107,11 @@ button {
   width: 33%;
   text-align: center;
   -ms-flex-line-pack: start;
-  align-content: flex-start;
+      align-content: flex-start;
   border-radius: 25px;
   background-color: #94d2bd;
   -webkit-box-shadow: inset 0 0.6em 2em -0.3em #0a9396;
-  box-shadow: inset 0 0.6em 2em -0.3em #0a9396;
+          box-shadow: inset 0 0.6em 2em -0.3em #0a9396;
   border-bottom: 0.15em solid #0a9396;
 
 }
@@ -139,10 +139,10 @@ button {
     text-align: center;
     border-radius: 25px;
     -ms-flex-line-pack: start;
-    align-content: flex-start;
+        align-content: flex-start;
     background-color: #94d2bd;
     -webkit-box-shadow: inset 0 0.6em 2em -0.3em #0a9396;
-    box-shadow: inset 0 0.6em 2em -0.3em #0a9396;
+            box-shadow: inset 0 0.6em 2em -0.3em #0a9396;
     border-bottom: 0.15em solid #0a9396;
 
   }
@@ -165,8 +165,8 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
@@ -236,11 +236,12 @@ li {
   }
 
   p,
-  a,
-  body {
+  a
+ {
     font-size: .83em;
 
   }
+
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -256,13 +257,19 @@ li {
   h2 {
     font-size: .9em;
   }
-
+  header{
+    font-size: .9em;
+  }
   p,
   a,
   body {
     font-size: .8em;
-
   }
+  .page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100px;
+            flex: 0 1 100px;
+}
 
   #profile-picture {
     border-radius: 50%;
@@ -291,11 +298,16 @@ li {
 
   p,
   a,
-  body,
+  body
   footer {
-    font-size: .67em;
+    font-size: .8em;
 
   }
+  .page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100px;
+            flex: 0 1 100px;
+}
 
   #profile-picture {
     border-radius: 50%;
@@ -366,30 +378,30 @@ button:focus,
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 0px);
-    transform: translate(0, 0px);
+            transform: translate(0, 0px);
   }
 
   to {
     -webkit-transform: translate(100px, 0px);
-    transform: translate(100px, 0px);
+            transform: translate(100px, 0px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 0px);
-    transform: translate(0, 0px);
+            transform: translate(0, 0px);
   }
 
   to {
     -webkit-transform: translate(100px, 0px);
-    transform: translate(100px, 0px);
+            transform: translate(100px, 0px);
   }
 }
 
 .cloud {
   -webkit-animation: 3s cloud-move infinite alternate linear;
-  animation: 3s cloud-move infinite alternate linear;
+          animation: 3s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes color-change {
@@ -424,7 +436,7 @@ button:focus,
 
 .wave {
   -webkit-animation: 4s color-change infinite alternate ease-in;
-  animation: 4s color-change infinite alternate ease-in;
+          animation: 4s color-change infinite alternate ease-in;
 }
 
 @-webkit-keyframes color-change3 {
@@ -459,7 +471,7 @@ button:focus,
 
 .wave1 {
   -webkit-animation: 4s color-change3 infinite alternate ease-in;
-  animation: 4s color-change3 infinite alternate ease-in;
+          animation: 4s color-change3 infinite alternate ease-in;
 }
 
 @-webkit-keyframes color-change2 {
@@ -494,37 +506,37 @@ button:focus,
 
 .bridge {
   -webkit-animation: 2s color-change2 infinite alternate linear;
-  animation: 2s color-change2 infinite alternate linear;
+          animation: 2s color-change2 infinite alternate linear;
 
 }
 
 @-webkit-keyframes letter-move {
   from {
     -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
 
   to {
     -webkit-transform: translate(0px, 25px);
-    transform: translate(0px, 25px)
+            transform: translate(0px, 25px)
   }
 }
 
 @keyframes letter-move {
   from {
     -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
 
   to {
     -webkit-transform: translate(0px, 25px);
-    transform: translate(0px, 25px)
+            transform: translate(0px, 25px)
   }
 }
 
 .letter {
   -webkit-animation: 1s letter-move infinite alternate linear;
-  animation: 1s letter-move infinite alternate linear;
+          animation: 1s letter-move infinite alternate linear;
 }
 
 @-webkit-keyframes color-change4 {
@@ -551,7 +563,7 @@ button:focus,
 
 .hill-light {
   -webkit-animation: 6s color-change4 infinite alternate ease-in-out;
-  animation: 6s color-change4 infinite alternate ease-in-out;
+          animation: 6s color-change4 infinite alternate ease-in-out;
 }
 
 @-webkit-keyframes color-change5 {
@@ -578,7 +590,7 @@ button:focus,
 
 .hill-dark {
   -webkit-animation: 6s color-change5 infinite alternate ease-in-out;
-  animation: 6s color-change5 infinite alternate ease-in-out;
+          animation: 6s color-change5 infinite alternate ease-in-out;
 }
 
 .animation {
