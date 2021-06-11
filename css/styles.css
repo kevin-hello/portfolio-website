@@ -244,8 +244,7 @@ li {
     font-size: .9em;
   }
   p,
-  a,
-  body {
+  a{
     font-size: .8em;
   }
   .page-header__item {
