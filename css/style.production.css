@@ -185,7 +185,9 @@ footer {
     font-size: 0.8em;
     padding-top: 1%;
 }
-
+.thanks{
+    text-align: center;
+}
 /* about page styling */
 .button {
     /* overwrites browser defaults */
