@@ -2,65 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Kevin Schaefer</title>
     <link href="images/coding.png" rel="shortcut icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
 <body>
-    <header class="page-header"><img id="header-logo" class="page-header__item" alt="placeholder-logo"
-            src="images/logo.png">
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation"><a href="index.html" role="menuitem"
-                        class="navigation-list__item highlight">Home</a></li>
-                <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item highlight"
-                        aria-label="information-about-me">About</a></li>
-                <li role="presentation"><a href="work.html" role="menuitem"
-                        class="navigation-list__item highlight">Work</a></li>
-                <li role="presentation"><a href="contact.html" role="menuitem"
-                        class="navigation-list__item navigation-list__item--active highlight">Contact</a></li>
+    <header>
+        <img id="header-logo" class="page-header__item" alt="header-logo" src="images/logo.png">
+        <nav>
+            <ul role="menubar" class="nav__links">
+                <li role="presentation"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="presentation"><a href="about.html" role="menuitem" aria-label="information-about-me">About</a>
+                </li>
+                <li role="presentation"><a href="work.html" role="menuitem">Work</a></li>
+                <li role="presentation"><a href="contact.html" role="menuitem" class="active">Contact</a></li>
+
             </ul>
         </nav>
     </header>
     <main>
         <h1 class="contact">Contact</h1>
-        <form action="contact-form-info" method="post" id="contact-form" name="contact-form">
-            <div>
-                <label for="contact-name" class="standard-label">Name:</label> <input required="" type="text"
-                    id="contact-name">
-            </div>
+        <div class="container">
+            <form action="mailto:kevinss.hello@gmail.com" method="post" id="contact-form" name="contact-form">
+                <div>
+                    <label for="contact-name">Name:</label>
+                    <input required placeholder="Please type your name" type="text" id="contact-name">
+                </div>
+                <div>
+                    <label for="contact-email">E-mail:</label>
+                    <input required placeholder="Email" type="email" id="contact-email">
+                </div>
+                <div><label for="contact-telephone">Telephone:</label>
+                    <input required placeholder="000-000-0000" type="tel" id="contact-telephone"
+                        pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                </div>
+                <div>
+                    <label for="contact-message">Message:</label>
+                    <textarea required placeholder="Please type your message here..." name="message"
+                        id="contact-message" cols="25" rows="5" maxlength="240" class="message-text"></textarea>
+                </div>
 
-            <div><label for="contact-name" class="standard-label">E-mail:</label> <input required="" type="email"
-                    id="contact-email"></div>
-            <div><label for="contact-telephone" class="standard-label">Telephone:</label> <input required="" type="tel"
-                    id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"></div>
-            <div>
-                <label for="contact-message" class="message-label">Message:</label>
-                <textarea required="" name="message" id="contact-message" cols="25" rows="5" maxlength="240"
-                    class="message-text"></textarea>
-            </div>
-            <div><button id="form-button" type="submit" form="contact-form" value="Submit">Send Message</button></div>
-        </form>
-        <!-- <div class="contact">Company name<br>
-            Street Address<br>
-            City State Zip<br>
-            <br> </div>-->
+                <div><button id="form-button" type="submit" form="contact-form" value="Submit">Send Message</button>
+                </div>
+            </form>
+        </div>
         <div class="contact-link">
-            Tel: <a href="tel:+18081234567" aria-label="telephone-number">+1
-                (808) 123-4567</a><br>
-            Skype: <a href="skype:helloplaceholder">helloplaceholder</a><br>
-            <a href="mailto:kevinss.hello@gmail.com">kevinss.hello@gmail.com</a><br>
-
-            <a href="mailto:kevinss.hello@gmail.com">Contact me</a>
+            <div>Tel: <a href="tel:+18081234567" aria-label="telephone-number">+1
+                    (808) 123-4567</a></div>
+            <div>Skype: <a href="skype:helloplaceholder">helloplaceholder</a></div>
+            <div><a href="mailto:kevinss.hello@gmail.com">kevinss.hello@gmail.com</a></div>
+            <div><a href="mailto:kevinss.hello@gmail.com">Contact me</a></div>
         </div>
     </main>
+    <footer>
+
+    </footer>
     <script src="js/tota11y.min.js">
     </script>
 </body>
