@@ -32,7 +32,8 @@
     <main>
         <h1 class="contact">Contact</h1>
         <div class="container">
-            <form action="mailto:kevinss.hello@gmail.com" method="post" id="contact-form" name="contact-form">
+            <form action="mailto:kevinss.hello@gmail.com" method="get" id="contact-form" name="contact-form"
+                enctype="text/plain" onsubmit="location.href='thanks.html';">
                 <div>
                     <label for="contact-name">Name:</label>
                     <input required placeholder="Please type your name" type="text" id="contact-name">
