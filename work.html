@@ -1,73 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work</title>
-    <link href="images/coding.png" rel="shortcut icon">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link href="images/coding.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <img id="header-logo" class="page-header__item" alt="header-logo" src="images/logo.png">
-        <nav>
-            <ul role="menubar" class="nav__links">
-                <li role="presentation"><a href="index.html" role="menuitem">Home</a></li>
-                <li role="presentation"><a href="about.html" role="menuitem" aria-label="information-about-me">About</a>
-                </li>
-                <li role="presentation"><a href="work.html" role="menuitem" class="active">Work</a></li>
-                <li role="presentation"><a href="contact.html" role="menuitem">Contact</a></li>
-
-            </ul>
-        </nav>
+      <img
+        id="header-logo"
+        class="page-header__item"
+        alt="header-logo"
+        src="images/logo.png"
+      />
+      <nav>
+        <ul role="menubar" class="nav__links">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a
+              href="about.html"
+              role="menuitem"
+              aria-label="information-about-me"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="active">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-
-        <section>
-            <h1 class="grid-title">Work</h1>
-            <div class="grid">
-                <!-- Grid items will live here -->
-                <div class="grid__item" id="grid1">
-                    <h2>project 1</h2>
-                    <p>project description</p>
-                    <a href="#">See Project on GitHub</a>
-                </div>
-                <div class="grid__item" id="grid2">
-                    <h2>project 2</h2>
-                    <p>project description</p>
-                    <a href="#">See Project on GitHub</a>
-                </div>
-                <div class="grid__item" id="grid3">
-                    <h2>project 3</h2>
-                    <p>project description</p>
-                    <a href="#">See Project on GitHub</a>
-                </div>
-                <div class="grid__item" id="grid4">
-                    <h2>project 4</h2>
-                    <p>project description</p>
-                    <a href="#">See Project on GitHub</a>
-                </div>
-            </div>
-        </section>
+      <section>
+        <h1 class="grid-title">Work</h1>
+        <div class="grid">
+          <!-- Grid items will live here -->
+          <div class="grid__item" id="grid1">
+            <h2>Pokedex App</h2>
+            <p>
+              A small web app which pulls data from an external API and allows a
+              user to view details about different Pokemon. This app was built
+              using HTML, CSS, Javascript, jQuery, and Bootstrap.
+            </p>
+            <a href="https://github.com/kevin-hello/Pokedex-app"
+              >See Project on GitHub</a
+            >
+            <a href="https://kevin-hello.github.io/Pokedex-app/">App</a>
+            <a href="#">Demo</a>
+          </div>
+          <div class="grid__item" id="grid2">
+            <h2>MyFlix API</h2>
+            <p>
+              This API is the server side portion of a movie app called MyFlix.
+              This API was built using HTML, MERN (MongoDB, Express, React, and
+              Node.js), REST Architecture, and Heroku.
+            </p>
+            <a href="https://github.com/kevin-hello/movie_api"
+              >See Project on GitHub</a
+            >
+          </div>
+          <div class="grid__item" id="grid3">
+            <h2>MyFlix App</h2>
+            <p>
+              This app is the client side portion of a movie app called MyFlix.
+              MyFlix is an single-page application which allows users to
+              seemlessly navigate between different views to explore various
+              information about a collection of movies. This app was built using
+              HTML, SCSS, Javascript, React, React-Redux, React-Bootstrap,
+              Parcel, and Netlify.
+            </p>
+            <a href="https://github.com/kevin-hello/myFlix-client"
+              >See Project on GitHub</a
+            >
+            <a href="https://myflix-basic-app.netlify.app/">App</a>
+            <a href="#">Demo</a>
+          </div>
+          <div class="grid__item" id="grid4">
+            <img
+              alt="meet-app-screenshot"
+              id="meet-app"
+              src="images/meet-app.png"
+            />
+            <h2>Meet App</h2>
+            <p>
+              This app is a progressive web application (PWA) built with React
+              using a test-driven development technique. This app was built
+              using HTML, CSS, Javascript, React, AWS Lambda, and Serverless
+            </p>
+            <a href="https://github.com/kevin-hello/meet-app"
+              >See Project on GitHub</a
+            >
+            <a href="https://kevin-hello.github.io/meet-app/">App</a>
+            <a href="#">Demo</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media"><a class="footer-links" href="https://github.com/kevin-hello"><img alt="github-logo"
-                    src="images/github-icon.svg"></a> <a class="footer-links" href="https://twitter.com/"><img
-                    alt="twitter-logo" src="images/twitter-icon.svg"></a> <a class="footer-links"
-                href="https://www.linkedin.com/"><img alt="linkedin-logo" src="images/linkedin-icon.svg"></a></div>
+      <p>Find me on</p>
+      <div class="social-media">
+        <a class="footer-links" href="https://github.com/kevin-hello"
+          ><img alt="github-logo" src="images/github-icon.svg"
+        /></a>
+        <a class="footer-links" href="https://twitter.com/"
+          ><img alt="twitter-logo" src="images/twitter-icon.svg"
+        /></a>
+        <a class="footer-links" href="https://www.linkedin.com/"
+          ><img alt="linkedin-logo" src="images/linkedin-icon.svg"
+        /></a>
+      </div>
     </footer>
-</body>
-<script src="js/tota11y.min.js">
-</script>
-
+  </body>
+  <script src="js/tota11y.min.js"></script>
 </html>
