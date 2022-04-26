@@ -2,7 +2,7 @@
 
 This website was built using HTML and CSS. The purpose of this website is to give more information about myself and to display projects I've worked on.
 
-## Tools
+## Built With
 
 - HTML
 - CSS
