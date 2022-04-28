@@ -114,8 +114,8 @@ footer {
     .grid {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr 20px 3fr;
+        grid-template-columns: 1fr 3fr;
         grid-gap: 20px;
         margin: 0 5%;
 
@@ -136,6 +136,13 @@ footer {
                 box-shadow: inset 0 0.6em 2em -0.3em #E7E7E7;
         border-bottom: 0.15em solid #E7E7E7;
 
+    }
+
+    .grid-image img{
+        border-radius: 25px;
+    }
+    .grid-image{
+        background-color: #BEB2AA;
     }
 }
 
