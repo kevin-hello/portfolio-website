@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #eee2be;
-    --header-color: #0a9396;
-    --grid-color: #94d2bd;
+    --primary-color: #BEB2AA;
+    --header-color: #E7E7E7;
+    --grid-color: #E7E7E7;
     --font-color: #000;
-    --nav-link-color: #03045e;
-    --hover-color: #13042b;
+    --nav-link-color: #877666;
+    --nav-link-hover-color: #BEB2AA;
     --button-color: #ee9b00;
     --button-border-color: #bb3e03;
 }
@@ -64,7 +64,7 @@ footer {
 }
 
 .nav__links li a:hover {
-    color: #fff;
+    color: var(--nav-link-hover-color);
 }
 
 /* Grid styling */
