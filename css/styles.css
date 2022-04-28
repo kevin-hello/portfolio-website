@@ -2,9 +2,11 @@
     --primary-color: #BEB2AA;
     --header-color: #E7E7E7;
     --grid-color: #E7E7E7;
+    --grid-item-title: #000;
+    --grid-item-body: #585858;
     --font-color: #000;
     --nav-link-color: #877666;
-    --nav-link-hover-color: #BEB2AA;
+    --nav-link-hover-color: #877666;
     --button-color: #ee9b00;
     --button-border-color: #bb3e03;
 }
@@ -69,7 +71,7 @@ footer {
 
 /* Grid styling */
 
-.grid-title {
+.work-page-title {
     text-align: center;
     font-size: 1.7em;
 }
@@ -98,13 +100,19 @@ footer {
     font-size: .9em;
 }
 
+grid-item-body{
+    color: var(--grid-item-body);
+}
+grid-item-title{
+    color: var(--grid-item-title);
+}
 
 /* end grid fallback */
 
 @supports (display: grid) {
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 20px;
         margin: 0 5%;
 
