@@ -95,22 +95,18 @@ footer {
 
 .grid__item h2 {
     font-size: 1.35em;
+    color: #000;
 }
 
 .grid__item p {
     font-size: 1em;
+    color: #585858;
 }
 
 .grid__item a {
     font-size: .9em;
 }
 
-.grid-item-body{
-    color: #585858;
-}
-.grid-item-title{
-    color: #000;
-}
 
 /* end grid fallback */
 

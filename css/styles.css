@@ -90,22 +90,18 @@ footer {
 
 .grid__item h2 {
     font-size: 1.35em;
+    color: var(--grid-item-title);
 }
 
 .grid__item p {
     font-size: 1em;
+    color: var(--grid-item-body);
 }
 
 .grid__item a {
     font-size: .9em;
 }
 
-.grid-item-body{
-    color: var(--grid-item-body);
-}
-.grid-item-title{
-    color: var(--grid-item-title);
-}
 
 /* end grid fallback */
 
