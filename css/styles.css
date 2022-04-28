@@ -79,7 +79,7 @@ footer {
 /* start grid fallback */
 .grid__item {
     display: inline-block;
-    width: 33%;
+    width: 100%;
     text-align: center;
     align-content: flex-start;
     border-radius: 25px;
@@ -410,9 +410,6 @@ footer {
 }
 
 @media all and (min-width: 750px) and (max-width: 1250px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
 
     .container {
         margin: 0 20%;
@@ -436,9 +433,6 @@ footer {
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
 
     h1 {
         font-size: 1.5em;
@@ -496,9 +490,6 @@ footer {
 }
 
 @media all and (max-width: 500px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
 
     #header-logo {
         height: 50px;
@@ -578,9 +569,7 @@ footer {
 
 
 @media all and (max-width: 350px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
+
 
     header {
         padding: 2px 1px;
