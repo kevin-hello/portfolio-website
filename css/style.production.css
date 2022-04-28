@@ -69,12 +69,12 @@ footer {
 }
 
 .nav__links li a:hover {
-    color: #BEB2AA;
+    color: #877666;
 }
 
 /* Grid styling */
 
-.grid-title {
+.work-page-title {
     text-align: center;
     font-size: 1.7em;
 }
@@ -105,6 +105,12 @@ footer {
     font-size: .9em;
 }
 
+.grid-item-body{
+    color: #585858;
+}
+.grid-item-title{
+    color: #000;
+}
 
 /* end grid fallback */
 
@@ -112,8 +118,8 @@ footer {
     .grid {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 20px;
         margin: 0 5%;
 
