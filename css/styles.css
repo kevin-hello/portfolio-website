@@ -73,7 +73,9 @@ footer {
 
 .work-page-title {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 2.2em;
+    margin: 1em;
+
 }
 
 /* start grid fallback */
@@ -96,6 +98,8 @@ footer {
 .grid__item p {
     font-size: 1em;
     color: var(--grid-item-body);
+    margin: 0.5em 2em 2em;
+    text-align: initial;
 }
 
 .grid__item a {
