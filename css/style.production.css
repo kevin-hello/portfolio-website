@@ -580,8 +580,8 @@ footer {
     .grid {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 1fr 20px 2fr;
-        grid-template-columns: 1fr 2fr;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 20px;
         margin: 0 2.5%;
     }
