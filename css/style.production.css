@@ -103,7 +103,7 @@ footer {
 .grid__item p {
     font-size: 1em;
     color: #585858;
-    margin: 0.5em 2em 2em;
+    margin: 0.5em 2em 1em;
     text-align: initial;
 }
 
@@ -143,10 +143,13 @@ footer {
     }
 
     .grid-image img{
-        border-radius: 25px;
+        border-radius: 10px;
     }
     .grid-image{
         background-color: #BEB2AA;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
 }
 
@@ -596,6 +599,15 @@ footer {
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
+
+    .grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        margin: 0 5%;
+    }
 
     h1 {
         font-size: 1.5em;
