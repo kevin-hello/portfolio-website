@@ -151,6 +151,13 @@ footer {
             -ms-grid-row-align: center;
             align-self: center;
     }
+
+    #chat-app1{
+        margin-right: 2.5%;
+    }
+    #chat-app2{ margin-left: 2.5%;
+
+    }
 }
 
 /* home page styling */
